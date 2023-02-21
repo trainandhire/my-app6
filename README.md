@@ -1,27 +1,57 @@
-# MyApp6
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+GIT Setup:  
+----------
 
-## Development server
+    1) Link laptop and website
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+        git config --global user.name "XXXXX"
+        git config --global user.name "YYYYY"
 
-## Code scaffolding
+    2) Link project and github repository
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+        git init
+        git remote add origin URLXXX
 
-## Build
+    3) Process - upload code
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+        git add .
+        git commit -m "XXXX"
+        git push
 
-## Running unit tests
+Angular:
+--------
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+        Angular is a framework to build single page applications.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+        framework: combination of libraries and languages.
 
-## Further help
+                -> HTML, css, typescript, rxjs, zone.js
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+        
+    Prerequisites:
+    --------------
+    1) Download and install node.js
+
+            check:  node -v
+                    npm -v
+
+    2) Install angular with npm
+            
+            npm install -g @angular/cli
+
+            check: ng version
+
+    3) Create project
+
+            ng new my-app
+
+    4) Start the server
+
+            ng serve
+
+
+Frontend Application Architecture:
+----------------------------------
+
+
