@@ -2,4 +2,18 @@
     width: 100vw;
     height: 100vh;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+}
+input{
+    margin-bottom: 40px;
 }

@@ -55,3 +55,54 @@ Frontend Application Architecture:
 ----------------------------------
 
 
+Angular concepts:
+-----------------
+
+
+
+Routing:
+--------
+
+        Angular is a SPA, routing helps us to navigate from one view to another view.
+
+        Implementation:
+        ---------------
+        1) configure the path in app-routing module.
+        2) add router-outlet tag for router output.
+
+        Types of Routes:
+        ----------------
+
+                1) General Route
+
+                        {path:'login', component: LoginComponent}
+
+                2) Empty Route/ Void Route
+
+                        {path:'login', component: LoginComponent}
+
+                3) Fallback Route/ wildcard Route
+
+                        {path:'**', component: PageNotFoundComponent}
+
+                4) Children Route
+                   --------------
+
+                        {path:'dashboard',component:DashComponent, children:[
+                                {path:'home',component: HomeCommponent}
+                        ]}
+
+
+                        ***) need to give router-outlet in dashobard
+
+        Navigation:
+        -----------
+
+          1) From HTML:
+             ----------
+
+                <button routerLink="_____"> login </button>            
+                
+
+          2) From TS:
+             ---------

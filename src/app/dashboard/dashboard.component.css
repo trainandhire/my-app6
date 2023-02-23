@@ -8,9 +8,22 @@
     width: 20%;
     height: 100%;
     background-color: black;
+    color: white;
 }
 .right{
     width: 80%;
     height: 100%;
     background-color: teal;
+}
+
+.left h4{
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.left h4:hover{
+    background-color: gray;
+    cursor: pointer;
 }
