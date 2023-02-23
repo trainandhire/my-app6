@@ -106,3 +106,47 @@ Routing:
 
           2) From TS:
              ---------
+
+
+
+
+
+
+
+
+
+Angular Architecture:
+---------------------
+
+        Data bidning:
+        -------------
+
+        Interpolation:  ts -> html
+        --------------
+
+                Passing data from class to template
+
+                Implementation:
+                ---------------
+
+
+        Event Binding: html -> ts
+        --------------
+
+                Passing data from template to class.
+
+                Implementation:
+                --------------- 
+
+
+        Two way binding:  html    ts
+        ----------------
+
+                Passing data in two-ways between html and ts.
+
+                Implementation:
+                ---------------
+                1) Import FormsModule in app module.
+                2) use ngModel at input
+
+                
