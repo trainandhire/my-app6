@@ -205,6 +205,26 @@ Directives:  useful to alter the DOM.
 
                 <h1 *ngIf="CONDITION">
 
+        2) Attribute Directives: useful to alter attribute value dynamically
+        ------------------------
+
+            1) ngStyle:
+            -----------
+
+                <td [ngStyle]="{color: user.marks<35?'red':'green'}">{{user.marks}}</td>
+
+        
+            2) ngClass:
+            -----------
+
+                <td [ngClass]="{'classOne':CONDITION, 'classtwo':CONDITION}">
+
+                
+
+                
+
+            
+
 
 
 

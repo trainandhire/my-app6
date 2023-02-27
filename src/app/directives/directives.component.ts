@@ -14,9 +14,9 @@ export class DirectivesComponent {
   public states:string[] = ["Telangana","Andhara","Tamilnadu","Karnataka"];
 
   public users:any = [
-    {name:'abc', phone:993993773},
-    {name:'def', phone:737737373},
-    {name:'xyz', phone:223233232}
+    {name:'abc', phone:993993773,marks:23,age:12},
+    {name:'def', phone:737737373,marks:55,age:23},
+    {name:'xyz', phone:223233232,marks:80,age:44}
   ]
 
   public products:any = [
