@@ -26,9 +26,10 @@ export class DirectivesComponent {
     {name:'tv', price:'25000', rating:4.5},
   ]
 
-
  public name:string = "";
  public allNames:string[] = [];
+
+ public today:any = new Date();
 
  register(){
   this.allNames.push(this.name);

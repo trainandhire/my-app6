@@ -219,7 +219,21 @@ Directives:  useful to alter the DOM.
 
                 <td [ngClass]="{'classOne':CONDITION, 'classtwo':CONDITION}">
 
-                
+
+        3) Component directives:
+        ------------------------
+
+                components are part of directives.
+
+                components are subset, directives are superset.
+
+
+Pipes: Pipes are useful to transform data from one format to another format.
+------  
+
+        symbol:  |
+
+        ex:   uppercase ,lowercase, json, date
 
                 
 
