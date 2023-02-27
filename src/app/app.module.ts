@@ -11,6 +11,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { WishComponent } from './wish/wish.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DirectivesComponent } from './directives/directives.component';
     HomeComponent,
     CalculatorComponent,
     DataBindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    WishComponent
   ],
   imports: [
     BrowserModule,

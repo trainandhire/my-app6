@@ -193,6 +193,18 @@ Directives:  useful to alter the DOM.
         1) structural directives:  useful to alter the structure of DOM.
         -------------------------
 
+            1) *ngFor:  Useful to iterate over html elements.
+               --------
+                <ol>
+                        <li *ngFor="let name of names">{{name}}</li>
+                </ol>
+
+
+            2) *ngIf: useful to show/hide element on condition base.
+              -------
+
+                <h1 *ngIf="CONDITION">
+
 
 
 

@@ -26,4 +26,20 @@ export class DirectivesComponent {
     {name:'tv', price:'25000', rating:4.5},
   ]
 
+
+ public name:string = "";
+ public allNames:string[] = [];
+
+ register(){
+  this.allNames.push(this.name);
+ }
+
+
+
+
+
+
+
+
+
 }
