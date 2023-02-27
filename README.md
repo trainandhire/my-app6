@@ -149,4 +149,56 @@ Angular Architecture:
                 1) Import FormsModule in app module.
                 2) use ngModel at input
 
+                ***) We should not give ngModel inside form tag.
+
+        
+TS Variable Strucute:
+---------------------
+        public phone:number = 94949393;
+Variable naming rules:
+-----------------------
+
+1) Name should be descriptive.
+
+        fn, ln 
+
+        firstName, lastName
+
+2) Name should be in camel case
+
+        first-name, firstname, first_name, FirstName
+
+        firstName
+
+3) We cannot give spaces in between names.
+
+        first name  
+
+        firstName
+
+4) Bolean vaiable names should start with "is".
+
+        isIndian
+        isShow
+
+Directives:  useful to alter the DOM.
+-----------
+
+        Direcives are three types.
+
+        1) structural directives 
+        2) attribute    
+        3) component
+
+        1) structural directives:  useful to alter the structure of DOM.
+        -------------------------
+
+
+
+
+
+
+
+
+
                 
