@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { CartComponent } from './cart/cart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
     {path:'data-binding', component: DataBindingComponent},
     {path:'calculator', component:CalculatorComponent},
     {path:'directives', component:DirectivesComponent},
-    {path:'wish', component:WishComponent}
+    {path:'wish', component:WishComponent},
+    {path:'cart', component:CartComponent}
   ]},
   {path:'',component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}
