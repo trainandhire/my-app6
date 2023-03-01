@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { WishComponent } from './wish/wish.component';
 import { CartComponent } from './cart/cart.component';
+import { PhonesComponent } from './phones/phones.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CartComponent } from './cart/cart.component';
     DataBindingComponent,
     DirectivesComponent,
     WishComponent,
-    CartComponent
+    CartComponent,
+    PhonesComponent
   ],
   imports: [
     BrowserModule,

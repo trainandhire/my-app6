@@ -8,6 +8,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PhonesComponent } from './phones/phones.component';
 import { WishComponent } from './wish/wish.component';
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
     {path:'calculator', component:CalculatorComponent},
     {path:'directives', component:DirectivesComponent},
     {path:'wish', component:WishComponent},
-    {path:'cart', component:CartComponent}
+    {path:'cart', component:CartComponent},
+    {path:'phones', component:PhonesComponent}
   ]},
   {path:'',component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}
