@@ -8,3 +8,19 @@
 <h1 *ngIf="time>=12 && time<17">Good Afternoon</h1>
 <h1 *ngIf="time>=17 && time<19">Good Evening</h1>
 <h1 *ngIf="time>=19 && time<24">Good Night</h1>
+
+
+
+
+
+<label for="">company:</label>
+<label for="">Honda</label>
+<input type="radio" name="company" [(ngModel)]="company" value="honda">
+<label for="">Kia</label>
+<input type="radio" name="company"  [(ngModel)]="company" value="kia">
+<br>
+
+<img src="/assets/honda.jfif" *ngIf="company=='honda'">
+<img src="/assets/kia.jfif" *ngIf="company=='kia'">
+
+

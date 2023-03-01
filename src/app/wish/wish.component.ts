@@ -9,4 +9,7 @@ export class WishComponent {
 
   public time:number = 0;
 
+  public company:string = "";
+
+
 }

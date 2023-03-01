@@ -237,7 +237,25 @@ Pipes: Pipes are useful to transform data from one format to another format.
 
                 
 
-            
+Service:
+--------
+
+        why:
+        ----
+        1) When logic is not related to view (API Calls)
+        2) When same logic requried across multiple components.
+
+        Implementtaion:
+        ---------------
+        1) create service
+
+                ng g s data
+
+        2) Inject service in component
+
+                constructor(private _dataService:DataService){
+                        
+                }
 
 
 
