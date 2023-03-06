@@ -258,6 +258,181 @@ Service:
                 }
 
 
+Structures:
+-----------
+
+1) Component
+------------
+
+        app.component.html
+                     .css
+                     .ts
+                     .spec.ts (unit testing file)
+
+
+        ts file structure:
+        ------------------
+
+                1) import statemnts
+                2) @Component decorator
+
+                    -> selector
+                    -> templateUrl
+                    -> styleUrls
+
+                3)  class
+
+                    -> variables
+                    -> constructor
+                    -> life cycle hooks
+                    -> custom methods
+
+
+2) Service Structure
+--------------------
+
+        phones.service.ts
+                      .spec.ts
+
+
+        service ts file structure:
+        --------------------------
+        1) import statments
+        2) Injectable decorator
+
+                -> providedIn
+
+        3) class
+
+                -> variables
+                -> constructor
+                -> custom methods
+
+
+Constructor:
+------------
+
+        -> it is a function part of every class
+
+        -> calls automatically when class initializes.
+
+
+Module structure:
+------------------
+
+        1) import statemnts
+        2) NgModule decorator
+
+            1) declarations -> componets, pipes, directives
+            2) imports      -> modules
+            3) exports      -> components, pipes, directives
+            4) providers    -> services
+            5) bootstrap    -> Initial load component
+
+        3) class
+
+
+Decorator:
+----------
+
+        Decorator provides information.
+
+        4 types of decorators:
+
+                1) Class Decorators:  @Component, @Injectable, @NgModule
+                2) Property Decorators: @Input, @Output
+                3) Function Decorators: @HostListner, @HostBinding
+                4) Argument Decorators:
+
+
+API Integration:
+----------------
+
+Client and server architecture:
+-------------------------------
+
+Request methods, Response codes:
+-------------------------------
+
+
+
+
+RXJS: Reactive Extension for JavaScript.
+-----
+
+        RXJS is responsible for all the async operations in Angular.
+
+
+        It has 3 features:
+                
+                1) promise
+                2) observable
+                3) subject
+
+
+                Promise                             observable
+               ---------                           ------------
+    1)    Single call back                  1) multiple callback
+
+    2)    If we create promise              2) Observable is lazy,
+          executes automatically                whenever we SUBSCRIBE then only it executes.
+        
+    3)    We cannot stop in bitween         3) we can stop in between using UNSUBSCRIBE method
+
+    4)    Less rxjs operator support        4)  more rxjs operator support.
+
+
+            Observable                           subject
+            ----------                         ------------
+
+    1)   Unicast                           1) Multicast
+
+    2)   No state                          2) Maintains state
+
+
+API Integration:
+----------------
+1) import HttpClientModule.
+
+        import { HttpClientModule } from '@angular/common/http';
+
+2) Inject HttpClient service in UsersService.
+
+        constructor(private _httpClient:HttpClient){ }
+
+3) Create a method to get data from api.
+   -> API will return observable of data.
+
+        getUsers():Observable<any>
+        {
+                this._httpClient.get("URL")
+        }
+
+4) Subscribe in ts file to get data
+
+        this._usersService.getUsers().subscribe(
+                (data:any)=>{
+
+                },
+                (err:any)=>{
+
+                }
+        )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

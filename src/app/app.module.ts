@@ -14,6 +14,9 @@ import { DirectivesComponent } from './directives/directives.component';
 import { WishComponent } from './wish/wish.component';
 import { CartComponent } from './cart/cart.component';
 import { PhonesComponent } from './phones/phones.component';
+import { UsersComponent } from './users/users.component';
+import { HttpClientModule } from '@angular/common/http';
+import { VehicleComponent } from './vehicle/vehicle.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,15 @@ import { PhonesComponent } from './phones/phones.component';
     DirectivesComponent,
     WishComponent,
     CartComponent,
-    PhonesComponent
+    PhonesComponent,
+    UsersComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
