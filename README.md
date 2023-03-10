@@ -421,6 +421,59 @@ API Integration:
 
 
 
+All possible API calls:
+-----------------------
+
+1) all           get       get(url)
+2) specific      get       get(url/id)
+3) filtering     get       get(url?filter=___)
+4) sorting       get       get(url?sortBy=__&order=___)
+5) pagination    get       get(url?page=__&limit=___)
+
+6) create        post      post(url,data)
+
+7) update        put       put(url/id, data)
+
+8) delete        delete    delete(url/id)
+
+
+users, vehicles, bank
+
+
+
+Angular Forms:
+--------------
+
+        There are two types of forms in Angular.
+
+        1) Template driven forms
+        2) Reactive forms
+
+                *) Reactive forms provides more features 
+                like touched, dirty, custom validators, formArrays etc.
+
+
+        Reacive Form Features:
+        ----------------------
+        1) FormGroup
+        2) Nested FormGroup
+        3) Form Array
+        4) Dynamic Forms
+        5) Form Validations
+        6) Custom Validators.
+
+        
+        1) FormGroup Implementation:
+        ----------------------------
+
+                1) Import ReactiveFormsModule
+
+                2) Create form view in HTML
+                3) Create form group in ts
+
+                4) Map the controls
+
+                5) Check value in submit
 
 
 

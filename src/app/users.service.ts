@@ -27,6 +27,10 @@ export class UsersService {
     return this._httpCleint.get(this.URL+"?limit="+limit+"&page="+page);
   }
 
+  createUser(data:any):Observable<any>{
+    return this._httpCleint.post(this.URL,data);
+  }
+
   deleteUser(id:string):Observable<any>{
     return this._httpCleint.delete(this.URL+"/"+id);
   }

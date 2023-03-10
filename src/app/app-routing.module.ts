@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CartComponent } from './cart/cart.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
     {path:'wish', component:WishComponent},
     {path:'cart', component:CartComponent},
     {path:'phones', component:PhonesComponent},
-    {path:'users', component:UsersComponent}
+    {path:'users', component:UsersComponent},
+    {path:'create-user', component:CreateUserComponent}
   ]},
   {path:'',component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}
